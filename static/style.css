@@ -1,0 +1,67 @@
+/* Background */
+body {
+    font-family: Arial, sans-serif;
+    background: url("../static/weather.jpg") no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 40px;
+    min-height: 100vh;
+    color: white;
+}
+
+/* Main transparent container */
+.container {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.35);    /* Transparent dark */
+    backdrop-filter: blur(12px);        /* Glass effect */
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Input + Button row */
+input {
+    padding: 12px;
+    width: 65%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: none;
+    background: #4a90e2;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover {
+    background: #357ABD;
+}
+
+/* Weather result card */
+.card {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.20); /* Light transparent */
+    backdrop-filter: blur(10px);           /* Glass blur */
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    color: #fff;
+}
+
+/* Weather text */
+.card p, .card h2 {
+    margin: 10px 0;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Report</h1>
+        <form method="POST">
+            <input type="text" name="city" placeholder="Enter city name" required>
+            <button type="submit">Check</button>
+        </form>
+
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+
+        {% if weather %}
+            <div class="card">
+                <h2>{{ weather.city }}</h2>
+                <img src="http://openweathermap.org/img/wn/{{ weather.icon }}@2x.png">
+                <p>{{ weather.description }}</p>
+                <p>Temperature: {{ weather.temperature }}°C</p>
+                <p>Humidity: {{ weather.humidity }}%</p>
+                <p>Wind: {{ weather.wind }} m/s</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
