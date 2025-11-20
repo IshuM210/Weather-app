@@ -3,9 +3,6 @@ __pycache__/
 *.pyo
 *.pyd
 .env
-venv/
-.env/
 .git
 .gitignore
-Dockerfile
-README.md
+*.log
