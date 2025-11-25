@@ -2,7 +2,13 @@ from flask import Flask, render_template, request
 import requests
 import os
 
+# ⭐ Add this import
+from prometheus_flask_exporter import PrometheusMetrics
+
 app = Flask(__name__)
+
+# ⭐ Enable metrics
+metrics = PrometheusMetrics(app)
 
 API_KEY = "159f776152a2fd48e08898433586b7fe"  # Replace with your OpenWeather key
 
