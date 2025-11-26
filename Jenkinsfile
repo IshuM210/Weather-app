@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKERHUB_CREDENTIALS = 'dockerhub-creds'   // Your DockerHub credential ID in Jenkins
         IMAGE_NAME = "ishwaryamallesh/weather-app"  // Your DockerHub repo
-        APP_SERVER = "ubuntu@13.201.30.68"          // Your APP EC2 public IP
+        APP_SERVER = "ubuntu@52.66.205.254"          // Your APP EC2 public IP
         SSH_KEY = "app-ssh-key"                     // Your SSH key credential ID in Jenkins
     }
 
